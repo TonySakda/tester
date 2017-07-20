@@ -1,0 +1,12 @@
+Input: myDay(1);
+
+if dayofweek(date) = myDay and time >=1400 then
+begin
+	if absvalue(opend(1)-closed(1)) < 0.5*(highd(1)-lowd(1)) then buy next bar at market;
+	if absvalue(opend(1)-closed(1)) > 0.5*(highd(1)-lowd(1)) then sellshort  next bar at market;
+
+	
+	
+end;
+
+setexitonclose;
